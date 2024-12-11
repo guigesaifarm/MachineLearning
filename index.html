@@ -10,18 +10,43 @@
     <div class="container">
         <h1>Escolha um vídeo para assistir</h1>
         <div id="video-container">
-            <video id="video-player" width="640" height="360" controls>
-                <source src="video1.mp4" type="video/mp4">
-                <source src="video2.mp4" type="video/mp4">
-                Seu navegador não suporta o formato de vídeo.
-            </video>
+            <div class="video-wrapper">
+                <video id="video1" width="640" height="360" controls>
+                    <source src="videos/video1.mp4" type="video/mp4">
+                    Seu navegador não suporta o formato de vídeo.
+                </video>
+            </div>
+            <div class="video-wrapper">
+                <video id="video2" width="640" height="360" controls>
+                    <source src="videos/video2.mp4" type="video/mp4">
+                    Seu navegador não suporta o formato de vídeo.
+                </video>
+            </div>
+            <div class="video-wrapper">
+                <video id="video3" width="640" height="360" controls>
+                    <source src="videos/video3.mp4" type="video/mp4">
+                    Seu navegador não suporta o formato de vídeo.
+                </video>
+            </div>
+            <div class="video-wrapper">
+                <video id="video4" width="640" height="360" controls>
+                    <source src="videos/video4.mp4" type="video/mp4">
+                    Seu navegador não suporta o formato de vídeo.
+                </video>
+            </div>
+            <div class="video-wrapper">
+                <video id="video5" width="640" height="360" controls>
+                    <source src="videos/video5.mp4" type="video/mp4">
+                    Seu navegador não suporta o formato de vídeo.
+                </video>
+            </div>
         </div>
         <div class="buttons">
-            <button onclick="changeVideo('video1.mp4')">Vídeo 1</button>
-            <button onclick="changeVideo('video2.mp4')">Vídeo 2</button>
-            <button onclick="changeVideo('video3.mp4')">Vídeo 3</button>
-            <button onclick="changeVideo('video4.mp4')">Vídeo 4</button>
-               <button onclick="changeVideo('video5.mp4')">Vídeo 5</button>
+            <button onclick="changeVideo('video1')">Vídeo 1</button>
+            <button onclick="changeVideo('video2')">Vídeo 2</button>
+            <button onclick="changeVideo('video3')">Vídeo 3</button>
+            <button onclick="changeVideo('video4')">Vídeo 4</button>
+            <button onclick="changeVideo('video5')">Vídeo 5</button>
         </div>
     </div>
     <script src="script.js"></script>
