@@ -8,6 +8,74 @@
 </head>
 <body>
     <div class="container">
+        <!-- Texto do Projeto -->
+        <div class="project-description">
+            <h1>Descrição do Projeto: Controle de Motor de Passo Utilizando Machine Learning e Visão Computacional</h1>
+            <h2>Introdução</h2>
+            <p>
+                O projeto tem como objetivo desenvolver um sistema que utilize técnicas de Machine Learning e visão computacional para controlar um motor de passo com base no movimento do rosto de uma pessoa específica. Esse sistema pode ser aplicado para melhorar a acessibilidade de pessoas com deficiência (PCD), como o controle de cadeiras de rodas, a ligação/desligação de aparelhos elétricos (motores, bombas, carros elétricos, etc.) e outras automações.
+            </p>
+            <h2>Tecnologias Utilizadas</h2>
+            <ul>
+                <li>Linguagem de Programação: Python</li>
+                <li>Bibliotecas de Visão Computacional: OpenCV, HaarCascade</li>
+                <li>Frameworks de Machine Learning: PyTorch</li>
+                <li>Hardware: Sistema embarcado (e.g., Raspberry Pi ou Arduino), motor de passo</li>
+            </ul>
+            <h2>Funcionamento do Sistema</h2>
+            <ol>
+                <li><strong>Aquisição de Dados pela Câmera:</strong>
+                    <ul>
+                        <li>Uma câmera captura o vídeo em tempo real.</li>
+                        <li>Os frames capturados são processados utilizando o OpenCV.</li>
+                    </ul>
+                </li>
+                <li><strong>Reconhecimento Facial:</strong>
+                    <ul>
+                        <li>Utiliza-se o algoritmo HaarCascade para detectar o rosto no frame.</li>
+                        <li>Um modelo de deep learning treinado com PyTorch identifica se o rosto pertence ao indivíduo específico autorizado a controlar o sistema.</li>
+                    </ul>
+                </li>
+                <li><strong>Análise de Movimento do Rosto:</strong>
+                    <ul>
+                        <li>Algoritmos de rastreamento facial (como dlib ou mediapipe) analisam o movimento do rosto.</li>
+                        <li>O movimento detectado (para cima, baixo, esquerda, direita) é convertido em comandos.</li>
+                    </ul>
+                </li>
+                <li><strong>Controle do Motor de Passo:</strong>
+                    <ul>
+                        <li>Um microcontrolador recebe os comandos de movimento.</li>
+                        <li>O motor de passo é controlado para executar os movimentos desejados com base na direção do rosto.</li>
+                    </ul>
+                </li>
+                <li><strong>Segurança e Automação:</strong>
+                    <ul>
+                        <li>O sistema é projetado para responder apenas ao rosto do usuário cadastrado, aumentando a segurança.</li>
+                        <li>Movimentos mais complexos, como o rastreamento da íris, podem ser implementados como um upgrade, permitindo comandos mais precisos.</li>
+                    </ul>
+                </li>
+            </ol>
+            <h2>Aplicabilidades</h2>
+            <ul>
+                <li>Acessibilidade: Controle de cadeiras de rodas ou outros dispositivos assistivos.</li>
+                <li>Automação Residencial: Ligação/desligação de aparelhos elétricos.</li>
+                <li>Indústria: Controle de máquinas ou equipamentos em ambientes industriais.</li>
+            </ul>
+            <h2>Benefícios</h2>
+            <ul>
+                <li>Inclusão e acessibilidade para PCDs.</li>
+                <li>Automação inteligente e personalizada.</li>
+                <li>Redução da necessidade de controles físicos convencionais.</li>
+            </ul>
+            <h2>Possíveis Extensões</h2>
+            <ul>
+                <li>Integração com comandos de voz para funcionalidades adicionais.</li>
+                <li>Implementação de redes neurais mais complexas para reconhecimento de gestos faciais detalhados.</li>
+                <li>Conexão com sistemas IoT para controle remoto.</li>
+            </ul>
+        </div>
+
+        <!-- Seção de Vídeos -->
         <h1>Escolha um vídeo para assistir</h1>
         <div id="video-container">
             <div class="video-wrapper">
@@ -52,3 +120,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
