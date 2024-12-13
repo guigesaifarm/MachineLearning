@@ -122,3 +122,23 @@ transition: color 0.3s;
 .nav-links li a:hover {
 color: #3498db;
 }
+.video-section {
+margin: 60px 20px;
+}
+.video-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 20px;
+}
+
+.video-card {
+background-color: #f5f5f5;
+border-radius: 8px;
+padding: 15px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+text-align: center;
+}
+.video-card h3 {
+margin: 10px 0;
+color: #333;
+}
