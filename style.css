@@ -171,3 +171,27 @@ font-weight: bold;
 .footer a:hover {
 text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+.video-grid {
+grid-template-columns: 1fr;
+}
+.header .nav-links {
+flex-direction: column;
+gap: 10px;
+}
+}
+
+
+button {
+background-color: #3498db;
+color: #ecf0f1;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+button:hover {
+background-color: #2980b9;
+}
