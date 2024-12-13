@@ -66,9 +66,9 @@ button,
 .buttons button {
     background-color: #3498db;
     color: #ecf0f1;
-    border: 15px;
-    padding: 16px 29px; /* Aumente o tamanho do botão */
-    font-size: 2.4rem; /* Aumenta o tamanho da fonte do botão */
+    border: 10px;
+    padding: 12px 25px; /* Aumente o tamanho do botão */
+    font-size: 1.4rem; /* Aumenta o tamanho da fonte do botão */
     border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -214,3 +214,4 @@ transition: background-color 0.3s;
 button:hover {
 background-color: #2980b9;
 }
+
