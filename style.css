@@ -60,28 +60,22 @@ video {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
+button,
 .buttons button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    margin: 5px;
+    background-color: #3498db;
+    color: #ecf0f1;
     border: none;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
+button:hover,
 .buttons button:hover {
-    background-color: #45a049;
+    background-color: #2980b9;
 }
+
 
 .project-description {
     margin-bottom: 30px;
