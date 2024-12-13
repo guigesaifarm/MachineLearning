@@ -143,7 +143,7 @@ font-weight: bold;
 .nav-links li a {
     color: #ecf0f1;
     text-decoration: none;
-    font-size: 1.2rem; /* Aumenta o tamanho da fonte dos links */
+    font-size: 1.8rem; /* Aumenta o tamanho da fonte dos links */
     transition: color 0.3s;
 }
 
