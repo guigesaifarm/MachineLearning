@@ -1,166 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seleção de Vídeos</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI + Machine Learning + Controle de Motor</title>
 
-<header class="header">
-<div class="container">
-<h1 class="logo">Controle de Motor de Passo com Machine Learning e Processo de reconhecimento de imagem com AI </h1>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+<div class="container header-content">
+<h1>Controle Inteligente com Machine Learning</h1>
 <nav>
-<ul class="nav-links">
+<ul>
 <li><a href="#intro">Introdução</a></li>
 <li><a href="#tecnologias">Tecnologias</a></li>
+<li><a href="#funcionamento">Funcionamento</a></li>
+<li><a href="#agrotech">Aplicação AgroTech</a></li>
 <li><a href="#videos">Vídeos</a></li>
-<li><a href="#contato">Contato</a></li>
 </ul>
 </nav>
 </div>
 </header>
 
-<section id="videos" class="video-section">
-<h2>Vídeos Demonstrativos</h2>
-<div class="video-grid">
-<div class="video-card">
-<video controls>
-<source src="video1.mp4" type="video/mp4">
-</video>
-<h3>Vídeo 1</h3>
-<p>Demonstrando o controle do motor.</p>
-</div>
-<div class="video-card">
-<video controls>
-<source src="video2.mp4" type="video/mp4">
-</video>
-<h3>Vídeo 2</h3>
-<p>Reconhecimento facial em ação.</p>
-</div>
-<!-- Adicionar mais vídeos conforme necessário -->
+<section class="hero">
+<div class="container">
+<h2>Integração entre Inteligência Artificial, Python e Automação Industrial</h2>
+<p>Sistema de reconhecimento facial para controle de motor de passo com segurança e precisão.</p>
 </div>
 </section>
-    
-<body>
-    <div class="container">
-        <!-- Texto do Projeto -->
-        <div class="project-description">
-            <h1>Descrição do Projeto: Controle de Motor de Passo Utilizando Machine Learning e Visão Computacional</h1>
-            <h2>Introdução</h2>
-            <p>
-                O projeto tem como objetivo desenvolver um sistema que utilize técnicas de Machine Learning e visão computacional para controlar um motor de passo com base no movimento do rosto de uma pessoa específica. Esse sistema pode ser aplicado para melhorar a acessibilidade de pessoas com deficiência (PCD), como o controle de cadeiras de rodas, a ligação/desligação de aparelhos elétricos (motores, bombas, carros elétricos, etc.) e outras automações.
-            </p>
-            <h2>Tecnologias Utilizadas</h2>
-            <ul>
-                <li>Linguagem de Programação: Python</li>
-                <li>Bibliotecas de Visão Computacional: OpenCV, HaarCascade</li>
-                <li>Frameworks de Machine Learning: PyTorch</li>
-                <li>Hardware: Sistema embarcado (e.g., Raspberry Pi ou Arduino), motor de passo</li>
-            </ul>
-            <h2>Funcionamento do Sistema</h2>
-            <ol>
-                <li><strong>Aquisição de Dados pela Câmera:</strong>
-                    <ul>
-                        <li>Uma câmera captura o vídeo em tempo real.</li>
-                        <li>Os frames capturados são processados utilizando o OpenCV.</li>
-                    </ul>
-                </li>
-                <li><strong>Reconhecimento Facial:</strong>
-                    <ul>
-                        <li>Utiliza-se o algoritmo HaarCascade para detectar o rosto no frame.</li>
-                        <li>Um modelo de deep learning treinado com PyTorch identifica se o rosto pertence ao indivíduo específico autorizado a controlar o sistema.</li>
-                    </ul>
-                </li>
-                <li><strong>Análise de Movimento do Rosto:</strong>
-                    <ul>
-                        <li>Algoritmos de rastreamento facial (como dlib ou mediapipe) analisam o movimento do rosto.</li>
-                        <li>O movimento detectado (para cima, baixo, esquerda, direita) é convertido em comandos.</li>
-                    </ul>
-                </li>
-                <li><strong>Controle do Motor de Passo:</strong>
-                    <ul>
-                        <li>Um microcontrolador recebe os comandos de movimento.</li>
-                        <li>O motor de passo é controlado para executar os movimentos desejados com base na direção do rosto.</li>
-                    </ul>
-                </li>
-                <li><strong>Segurança e Automação:</strong>
-                    <ul>
-                        <li>O sistema é projetado para responder apenas ao rosto do usuário cadastrado, aumentando a segurança.</li>
-                        <li>Movimentos mais complexos, como o rastreamento da íris, podem ser implementados como um upgrade, permitindo comandos mais precisos.</li>
-                    </ul>
-                </li>
-            </ol>
-            <h2>Aplicabilidades</h2>
-            <ul>
-                <li>Acessibilidade: Controle de cadeiras de rodas ou outros dispositivos assistivos.</li>
-                <li>Automação Residencial: Ligação/desligação de aparelhos elétricos.</li>
-                <li>Indústria: Controle de máquinas ou equipamentos em ambientes industriais.</li>
-            </ul>
-            <h2>Benefícios</h2>
-            <ul>
-                <li>Inclusão e acessibilidade para PCDs.</li>
-                <li>Automação inteligente e personalizada.</li>
-                <li>Redução da necessidade de controles físicos convencionais.</li>
-            </ul>
-            <h2>Possíveis Extensões</h2>
-            <ul>
-                <li>Integração com comandos de voz para funcionalidades adicionais.</li>
-                <li>Implementação de redes neurais mais complexas para reconhecimento de gestos faciais detalhados.</li>
-                <li>Conexão com sistemas IoT para controle remoto.</li>
-            </ul>
-        </div>
 
-        <!-- Seção de Vídeos -->
-        <h1>Escolha um vídeo para assistir</h1>
-        <div id="video-container">
-            <div class="video-wrapper">
-                <video id="video1" width="640" height="360" controls>
-                    <source src="video1.mp4" type="video/mp4">
-                    Seu navegador não suporta o formato de vídeo.
-                </video>
-            </div>
-            <div class="video-wrapper">
-                <video id="video2" width="640" height="360" controls>
-                    <source src="video2.mp4" type="video/mp4">
-                    Seu navegador não suporta o formato de vídeo.
-                </video>
-            </div>
-            <div class="video-wrapper">
-                <video id="video3" width="640" height="360" controls>
-                    <source src="video3.mp4" type="video/mp4">
-                    Seu navegador não suporta o formato de vídeo.
-                </video>
-            </div>
-            <div class="video-wrapper">
-                <video id="video4" width="640" height="360" controls>
-                    <source src="video4.mp4" type="video/mp4">
-                    Seu navegador não suporta o formato de vídeo.
-                </video>
-            </div>
-            <div class="video-wrapper">
-                <video id="video5" width="640" height="360" controls>
-                    <source src="video5.mp4" type="video/mp4">
-                    Seu navegador não suporta o formato de vídeo.
-                </video>
-            </div>
-        </div>
-        <div class="buttons">
-            <button onclick="changeVideo('video1')">Vídeo 1</button>
-            <button onclick="changeVideo('video2')">Vídeo 2</button>
-            <button onclick="changeVideo('video3')">Vídeo 3</button>
-            <button onclick="changeVideo('video4')">Vídeo 4</button>
-            <button onclick="changeVideo('video5')">Vídeo 5</button>
-        </div>
-    </div>
-    <script src="script.js"></script>
-    
-    <footer class="footer">
-<p>&copy; 2024 Controle de Motor de Passo a partir de Machine Learning Técnicas de AI . Desenvolvido por GuiGesaifarm.</p>
-<p><a href="mailto:guigesaifarm@gmail.com">guigesaifarm@gmail.com</a></p>
+<section id="intro" class="section">
+<div class="container">
+<h2>📌 Introdução</h2>
+<p>
+Projeto educacional demonstrando como técnicas de Machine Learning e Visão Computacional
+podem controlar motores, bombas e sistemas industriais apenas com reconhecimento facial.
+</p>
+</div>
+</section>
+
+<section id="tecnologias" class="section dark">
+<div class="container">
+<h2>🧠 Tecnologias Utilizadas</h2>
+<div class="grid-3">
+<div class="card">
+<h3>Python</h3>
+<p>Processamento de imagens e integração com hardware.</p>
+</div>
+
+<div class="card">
+<h3>OpenCV</h3>
+<p>Detecção facial e rastreamento de movimento.</p>
+</div>
+
+<div class="card">
+<h3>Machine Learning</h3>
+<p>Autenticação facial e análise inteligente de padrões.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="funcionamento" class="section">
+<div class="container">
+<h2>⚙ Funcionamento do Sistema</h2>
+<ol>
+<li>Captura da imagem via câmera</li>
+<li>Processamento com OpenCV</li>
+<li>Reconhecimento facial com ML</li>
+<li>Conversão de movimento em comando</li>
+<li>Controle do motor de passo</li>
+</ol>
+</div>
+</section>
+
+<section id="agrotech" class="section dark">
+<div class="container">
+<h2>🌱 Aplicação em AgroTech</h2>
+<p>O sistema pode ser aplicado em:</p>
+<ul>
+<li>Máquinas agrícolas</li>
+<li>Bombas elétricas</li>
+<li>Sistemas de irrigação</li>
+<li>Motoredutores</li>
+<li>Válvulas solenoides</li>
+<li>Servomotores</li>
+</ul>
+</div>
+</section>
+
+<section id="videos" class="section">
+<div class="container">
+<h2>🎥 Vídeos Demonstrativos</h2>
+
+<div class="video-grid">
+
+<div class="video-card">
+<video id="video1" controls>
+<source src="videos/video1.mp4" type="video/mp4">
+</video>
+<button onclick="playVideo('video1')">Reproduzir</button>
+</div>
+
+<div class="video-card">
+<video id="video2" controls>
+<source src="videos/video2.mp4" type="video/mp4">
+</video>
+<button onclick="playVideo('video2')">Reproduzir</button>
+</div>
+
+</div>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Projeto Educacional de AI + Machine Learning</p>
+<p>Desenvolvido por GuiGesaifarm</p>
 </footer>
-    
+
+<script src="script.js"></script>
+
 </body>
 </html>
-
